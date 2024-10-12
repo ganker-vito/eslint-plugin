@@ -40,7 +40,7 @@ Then configure the rules you want to use under the rules section.
 ```
 You can also use advanced(alias & extensions) configuration to config files you need check! 
 
-```json
+```js
 {
     "rules": {
         "assets/check": [

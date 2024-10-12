@@ -2,6 +2,8 @@
 
 Helps check whether statically imported resources exist, Even if you use aliases or files starting width `.`
 
+For example, in the Vite project, there may be a client. d.ts file for static resources, and all ts cannot handle whether this file exists well. Especially during development, it may cause build code errors and cause some build problems. This plugin can effectively avoid this situation
+
 ## Installation
 
 You'll first need to install [ESLint](https://eslint.org/):

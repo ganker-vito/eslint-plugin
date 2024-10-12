@@ -4,10 +4,9 @@
   "author": "Leo_Wang(leowgreat@gmail.com)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitejs/vite.git",
-    "directory": "packages/vite"
+    "url": "git+https://github.com/ganker-vito/eslint-plugin.git"
   },
-  "homepage": "https://www.npmjs.com/package/eslint-plugin-assets",
+  "homepage": "https://github.com/ganker-vito/eslint-plugin.git",
   "description": "Helps check whether statically imported resources exist",
   
   "keywords": [

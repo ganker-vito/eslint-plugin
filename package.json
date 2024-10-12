@@ -1,0 +1,64 @@
+{
+  "name": "eslint-plugin-assets",
+  "version": "1.0.5",
+  "author": "Leo_Wang(leowgreat@gmail.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitejs/vite.git",
+    "directory": "packages/vite"
+  },
+  "homepage": "https://www.npmjs.com/package/eslint-plugin-assets",
+  "description": "Helps check whether statically imported resources exist",
+  
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "eslint-plugin-assets",
+    "eslint-plugin-assets/exists"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "npm-run-all \"lint:*\"",
+    "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
+    "lint:js": "eslint .",
+    "test": "mocha tests --recursive",
+    "update:eslint-docs": "eslint-doc-generator",
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-typescript": "^7.25.7",
+    "@eslint/js": "^9.0.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "eslint": "^9.0.0",
+    "eslint-doc-generator": "^1.0.0",
+    "eslint-plugin-eslint-plugin": "^6.0.0",
+    "eslint-plugin-n": "^17.0.0",
+    "mocha": "^10.0.0",
+    "npm-run-all2": "^6.1.2",
+    "rollup": "^4.24.0",
+    "rollup-plugin-delete": "^2.1.0"
+  },
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.57.0"
+  },
+  "license": "MIT"
+}
